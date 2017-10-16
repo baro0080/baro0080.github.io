@@ -1,0 +1,151 @@
+/***** ADD CLEARFIX AND BOXSIZING*****/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+/********Main Navigation*******/
+
+/***mobile***/
+.main-nav{
+    display: none;
+    width: 100%;
+}
+
+.logo2{
+    display: none;
+}
+
+.header{
+    height: 80px;
+    background-color: rgb(220,65,129);
+    position: relative;
+    margin-top: 0px;
+}
+.logo-img{
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.title{
+    text-align: center;
+}
+
+#button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+}
+
+.fa-bars{
+    color: black;
+}
+
+/***640px***/
+@media (min-width: 640px) {
+
+#header{
+    display: none;
+}
+
+.main-nav{
+    display: block;
+    max-width: 100%;
+    height: 80px;
+    background-color: rgb(220,65,129);
+    top: 0px; 
+
+}
+
+.nav-items{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.nav-items:nth-child(2), .nav-items:nth-child(3), .nav-items:nth-child(4){
+    padding-top: 30px;
+}
+
+
+.logo2{
+    display: block;
+    height: 80px;
+    padding-top: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.div{
+       width: 100%;
+    height: 100%;
+    }    
+    
+.col-1, .col-2{
+       width: 50%;
+    float: left;
+    }
+
+.col-1{
+      background-color: black; 
+    }
+
+.col-2{
+       background-color:rgb(220,65,129) ; 
+    }
+
+.nav-items2{
+      width: 33%;
+    float: left;
+    text-align: center;
+    }
+
+    .section-nav{
+        color: white;
+    }
+    
+    p{
+        color: white;
+        font-family: 'Amatic SC', cursive;
+    }
+/***1200px***/
+@media (min-width: 1200px){
+    
+    
+}
