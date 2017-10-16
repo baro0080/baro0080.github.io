@@ -77,12 +77,17 @@ html {
     display: none;
 }
 
+#welcome{
+  position: relative;
+}
+
 .main-nav{
     display: block;
     max-width: 100%;
     height: 80px;
     background-color: rgb(220,65,129);
-    top: 0px; 
+    position: absolute;
+    bottom: 0px;
 
 }
 
@@ -90,9 +95,6 @@ html {
     float: left;
     width: 25%;
     text-align: center;
-}
-
-.nav-items:nth-child(2), .nav-items:nth-child(3), .nav-items:nth-child(4){
     padding-top: 30px;
 }
 
@@ -115,19 +117,19 @@ a:hover{
 .div{
        width: 100%;
     height: 100%;
-    }    
-    
+    }
+
 .col-1, .col-2{
        width: 50%;
     float: left;
     }
 
 .col-1{
-      background-color: black; 
+      background-color: black;
     }
 
 .col-2{
-       background-color:rgb(220,65,129) ; 
+       background-color:rgb(220,65,129) ;
     }
 
 .nav-items2{
@@ -139,13 +141,13 @@ a:hover{
     .section-nav{
         color: white;
     }
-    
+
     p{
         color: white;
         font-family: 'Amatic SC', cursive;
     }
 /***1200px***/
 @media (min-width: 1200px){
-    
-    
+
+
 }
