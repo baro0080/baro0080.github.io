@@ -79,6 +79,7 @@ html {
 
 #welcome{
   position: relative;
+  background: url(img/IMG_0294.JPG);
 }
 
 .main-nav{
@@ -129,7 +130,7 @@ a:hover{
     }
 
 .col-2{
-       background-color:rgb(220,65,129) ;
+       background-color:#2E2E2E ;
     }
 
 .nav-items2{
@@ -144,10 +145,36 @@ a:hover{
 
     p{
         color: white;
-        font-family: 'Amatic SC', cursive;
+          font-family: 'Amatic SC', cursive;
+    }
+
+    footer  {
+      background-color: #2E2E2E;
+      text-align: center;
     }
 /***1200px***/
 @media (min-width: 1200px){
 
+  .carousel {
+      width: 640px;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+
+  .slides {
+      display: flex;
+  }
+
+  .slide {
+      position: relative;
+      width: 640px;
+      height: 426px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      transition: transform 1s;
+  }
 
 }
