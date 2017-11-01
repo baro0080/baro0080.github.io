@@ -126,17 +126,24 @@ a:hover{
     }
 
 .col-1{
-      background-color: black;
+      background-color: #2E2E2E;
+      position: relative;;
     }
 
 .col-2{
-       background-color:#2E2E2E ;
+       background-color:#BCBCBC ;
     }
-
+.nav2{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .nav-items2{
-      width: 33%;
+      width: 33.33333%;
+      padding: 10px;
     float: left;
     text-align: center;
+    background-color: rgb(220,65,129);
     }
 
     .section-nav{
