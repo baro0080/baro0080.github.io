@@ -24,7 +24,7 @@ html {
   box-sizing: inherit;
   }
 
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Dosis');
 
 /********Main Navigation*******/
 
@@ -145,7 +145,7 @@ a:hover{
 
     p{
         color: white;
-          font-family: 'Amatic SC', cursive;
+          font-family: 'Dosis';
     }
 
     footer  {
@@ -156,7 +156,7 @@ a:hover{
 @media (min-width: 1200px){
 
   .carousel {
-      width: 640px;
+      width: 80%;
       margin: 0 auto;
       overflow: hidden;
   }
@@ -167,7 +167,7 @@ a:hover{
 
   .slide {
       position: relative;
-      width: 640px;
+      width: 90%;
       height: 426px;
 
       background-repeat: no-repeat;
@@ -175,6 +175,11 @@ a:hover{
       background-size: cover;
 
       transition: transform 1s;
+  }
+
+  .section-image{
+    align: center;
+    width: 50%;
   }
 
 }
