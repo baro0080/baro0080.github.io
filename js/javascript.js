@@ -1,12 +1,3 @@
-$(".div, .col-1, .col-2").css("min-height", $(window).height() );
-
-$("#button").click(function(){
-    $("#main-nav").slideToggle();
-    });
-
-
-
-
     const _carousel = document.getElementById('carousel1');
     const _carousel2 = document.getElementById('carousel2');
 

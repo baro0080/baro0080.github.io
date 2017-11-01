@@ -162,6 +162,10 @@ a:hover{
 /***1200px***/
 @media (min-width: 1200px){
 
+  .header{
+    background-image: : url('img/IMG_0294.jpg');
+  }
+
   .carousel {
       width: 80%;
       margin: 0 auto;
@@ -181,12 +185,19 @@ a:hover{
       background-position: center;
       background-size: cover;
 
-      transition: transform 1s;
   }
 
   .section-image{
     align: center;
     width: 50%;
+  }
+
+  .button-carousel img{
+    width: 25%;
+  }
+
+  .button-carousel {
+    background-colour: #BCBCBC;
   }
 
 }
