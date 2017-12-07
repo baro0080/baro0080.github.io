@@ -1,3 +1,1 @@
-$(".div, .col-1, .col-2").css("min-height", $(window).height() );
-
-    
+$(".section").css("min-height", $(window).height() );
