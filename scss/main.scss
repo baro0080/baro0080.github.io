@@ -64,8 +64,24 @@ html {
 .card > img {
   margin-bottom: .75rem;
   width: 100%;
+:hover
+  cursor: pointer;
 }
 
 .card-text {
   font-size: 85%;
+}
+
+.modal  {
+  width: 100%;
+  background-color: rgba(255,255,255,0.7)
+}
+
+.btn{
+  background-color: $pink;
+
+}
+
+button:hover{
+  cursor: pointer;
 }
