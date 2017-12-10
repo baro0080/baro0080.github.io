@@ -16,6 +16,8 @@
 
 <body>
   <!-- Header -->
+
+  <!-- Desktop and Tablet nav -->
   <nav class="navbar-nav nav-tabs fixed-top navbar-light bg-faded">
     <ul class="nav justify-content-center">
       <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
@@ -24,19 +26,45 @@
       <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
     </ul>
   </nav>
+
+  <!-- Hamburger nav for mobile -->
+  <div class="dropdown">
+  <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button"><a href="#about-me">About Me</a></button>
+    <button class="dropdown-item" type="button"><a href="#web-design">Web Design</a></button>
+    <button class="dropdown-item" type="button"><a href="#graphic-design">Graphic Design</a></button>
+<button class="dropdown-item" type="button"><a href="#contact">Contact Me</a></button>
+  </div>
+</div>
+
+
   <div class="container-fluid">
     <div class="row section justify-content-center">
       <div class="jumbotron-fluid" style="background-image:url(&quot;img/IMG_0294.JPG&quot;);">
-
+<div class="logo">
+  <img src="img/Logo.png" alt="Lauren Baroud Logo">
+</div>
+<div class="header-title">
+  <h1>Lauren Baroud</h1><br>
+  <div class="header-social">
+    <a href="https://www.facebook.com/"><img src="img/Facebook_1.png" alt="Facebook Icon"></a>
+    <a href="https://www.instagram.com/laurennbaroud/"><img src="img/Instagram_1.png" alt="Instagram Icon"></a>
+    <a href="https://www.linkedin.com/in/laurenbaroud/"><img src="img/LinkedIn_1.png" alt="LinkedIn Icon"></a>
+    <a href="https://codepen.io/baro0080/"><img src="img/CodePen_1.png" alt="CodePen Icon"></a>
+  </div>
+</div>
       </div>
     </div>
-
+<!-- content -->
     <!-- About me -->
     <div id="about-me" class="section row justify-content-center">
       <div class="dark-grey col-12">
         <h1>About Me</h1>
       </div>
-      <div class="light-grey col-12">
+      <div class="light-grey col-12 about-me">
         <img src="img/About Me Collage.png" alt="About Me Collage">
       </div>
 
@@ -194,7 +222,7 @@
       </div>
       <div class="light-grey col-12">
         <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
 <form>
   Name<br>
   <input type="text" value="" name="name"><br>
@@ -202,14 +230,14 @@
   <input type="text" value="" name="email"><br>
   Message<br>
   <input type="textarea" value="" name="message" ><br>
-  <input type="submit" value="submit">
+  <input type="submit" value="Submit">
 </form>
 </div>
-<div class="col-6">
+<div class="col-12 col-md-6">
   <a href="https://www.facebook.com/"><img src="img/Facebook_1.png" alt="Facebook Icon"></a>
-  <a href="https://www.instagram.com/laurennbaroud/"><img src="img/Instagram_1.png" alt="Instagram Icon"></a>
+  <a href="https://www.instagram.com/laurennbaroud/"><img src="img/Instagram_1.png" alt="Instagram Icon"></a><br>
   <a href="https://www.linkedin.com/in/laurenbaroud/"><img src="img/LinkedIn_1.png" alt="LinkedIn Icon"></a>
-  <a href="https://codepen.io/baro0080/"><img src="img/CodePen_1.png" alt="CodePen Icon"></a>
+  <a href="https://codepen.io/baro0080/"><img src="img/CodePen_1.png" alt="CodePen Icon"></a><br>
   <a href="mailto:laurenbaroud@hotmail.com"><img src="img/Contact.png" alt="Envelope Icon">laurenbaroud@hotmail.com</a>
 </div>
 </div>

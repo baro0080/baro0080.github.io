@@ -5553,40 +5553,94 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 body {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  background-color: #DB4080; }
 
 html {
   font-size: 20px; }
-  @media (min-width: 992px) {
-    html {
-      font-size: 25px; } }
   @media (min-width: 576px) {
     html {
-      font-size: 15px; } }
+      font-size: 12px; } }
   @media (min-width: 768px) {
     html {
-      font-size: 15px; } }
+      font-size: 20px; } }
+  @media (min-width: 992px) {
+    html {
+      font-size: 20px; } }
+
+.logo img {
+  width: 100px;
+  position: absolute;
+  top: 150px;
+  left: 30%; }
+  @media (min-width: 768px) {
+    .logo img {
+      left: 40%;
+      top: 200px;
+      width: 200px; } }
+
+nav {
+  visibility: hidden; }
+  @media (min-width: 768px) {
+    nav {
+      visibility: visible; } }
 
 li a {
   text-decoration: none;
   margin: 0 20px;
   color: black; }
   li a :hover {
-    color: #DB4080; }
+    color: black; }
+
+.dropdown {
+  z-index: 5;
+  top: 5px;
+  right: 5px;
+  position: fixed; }
+  .dropdown a {
+    text-decoration: none;
+    color: black; }
+  .dropdown .dropdown-menu {
+    background-color: #DB4080; }
+    .dropdown .dropdown-menu :hover {
+      background-color: #DB4080; }
+  .dropdown .dropdown-item:hover {
+    background-color: #DB4080; }
+  @media (min-width: 768px) {
+    .dropdown {
+      visibility: hidden; } }
+  .dropdown button {
+    background-color: #DB4080; }
+    .dropdown button :hover {
+      background-color: #DB4080; }
 
 .jumbotron-fluid {
+  top: 50%;
   background-size: cover;
   width: 100%;
-  height: 100%; }
+  min-height: 100%; }
+  .jumbotron-fluid .header-title {
+    width: 500px;
+    top: 150px;
+    right: 5px;
+    position: absolute;
+    background-color: rgba(219, 64, 128, 0.7); }
+    .jumbotron-fluid .header-title .header-social > a > img {
+      width: 35px; }
 
 .dark-grey {
   background-color: #2E2E2E;
   color: white;
-  height: 20%; }
+  min-height: 20%; }
 
 .light-grey {
   background-color: #BCBCBC;
-  height: 80%; }
+  min-height: 80%; }
+
+.about-me {
+  text-align: center; }
+  .about-me img {
+    width: 50%; }
 
 .card {
   float: left;
@@ -5619,8 +5673,26 @@ li a {
 .modal-body > img {
   width: 100%; }
 
-form input[type=text] {
-  margin: 0 auto; }
+form {
+  text-align: center;
+  padding-top: 30px; }
+  form input[type=text] {
+    border-radius: 5px;
+    width: 350px; }
+  form input[type=textarea] {
+    border-radius: 5px;
+    width: 350px;
+    height: 300px; }
+  form input[type=submit] {
+    background-color: #DB4080;
+    margin: 20px;
+    width: 100px;
+    height: 50px; }
 
-form input[type=textarea] {
-  margin: 0 auto; }
+div > a > img {
+  width: 100px; }
+  div > a > img :last-child {
+    width: 50px; }
+
+footer {
+  background-color: #DB4080; }
