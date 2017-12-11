@@ -5638,6 +5638,7 @@ li a {
     background-color: rgba(219, 64, 128, 0.7);
     position: absolute;
     padding-top: 10px;
+    padding-left: 70px;
     text-align: center;
     top: 165px;
     left: 20%;
@@ -5652,7 +5653,7 @@ li a {
         position: absolute;
         text-align: center;
         top: 170px;
-        padding-left: 90px;
+        padding-left: 50px;
         padding-bottom: 10px; }
         .jumbotron-fluid .header-title .header-social > a > img {
           margin-top: -50px;
@@ -5666,7 +5667,8 @@ li a {
         left: 38%;
         top: 230px;
         text-align: center;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        padding-left: 110px; }
         .jumbotron-fluid .header-title .header-social {
           text-align: center; }
         .jumbotron-fluid .header-title .header-social > a > img {
@@ -5676,7 +5678,7 @@ li a {
         .jumbotron-fluid .header-title h1 {
           font-size: 45px; } }
 
-row {
+.row {
   min-height: 100%; }
 
 .dark-grey {
