@@ -5707,7 +5707,8 @@ li a {
   border: 0;
   background-color: #BCBCBC; }
   .card p {
-    text-align: center; }
+    text-align: center;
+    padding-top: 20px; }
   .card img {
     margin-bottom: 0.75rem;
     width: 100%; }
@@ -5770,3 +5771,22 @@ footer {
     @media (min-width: 768px) {
       footer p {
         font-size: 20px; } }
+
+#return-to-top {
+  margin-left: 100px;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  #return-to-top i {
+    transform: scale(2);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #return-to-top :hover {
+    cursor: pointer; }
