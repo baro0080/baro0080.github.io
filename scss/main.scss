@@ -1,93 +1,110 @@
 @import 'custom';
 @import '../node_modules/bootstrap/scss/bootstrap';
+@import url( 'https://fonts.googleapis.com/css?family=Catamaran|Dosis');
 
 body {
   padding: 2rem 0;
   background-color: $pink;
 }
-
 // Responsive typography sizes using Bootstrap mixins for the media querries
 html {
-  h1{
+  h1 {
     font-size: 25px;
+    font-family: 'Dosis';
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: 'Catamaran';
   }
   font-size: 20px;
 
-@include media-breakpoint-up(sm) {
-      font-size: 12px;
+  p {
+    font-family: 'Catamaran';
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
   }
   @include media-breakpoint-up(md) {
-
-      font-size: 20px;
+    font-size: 20px;
   }
   @include media-breakpoint-up(lg) {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
 
-nav{
-
-visibility: hidden;;
-  @include media-breakpoint-up(md){
+nav {
+  visibility: hidden;
+  @include media-breakpoint-up(md) {
     visibility: visible;
   }
 }
 
-li a{
+li a {
   text-decoration: none;
+  font-family: 'Catamaran';
   margin: 0 20px;
-  color: black;
-  :hover{
+  color: white;
+
+  :hover {
+    text-decoration: none;
     color: black;
   }
-
 }
 
-.dropdown{
+.dropdown {
   z-index: 5;
   top: 5px;
   right: 5px;
   position: fixed;
-  a{
-  text-decoration: none;
-  color: black;
 
+  a {
+    text-decoration: none;
+    color: black;
   }
-  .dropdown-menu{
+
+  .dropdown-menu {
     background-color: $pink;
+
     :hover {
-        background-color: $pink;
-    }
-  }
-  .dropdown-item:hover{
-    background-color: $pink;
-  }
-  @include media-breakpoint-up(md){
-    visibility: hidden;
-  }
-  button {
-    background-color: $pink;
-    :hover{
       background-color: $pink;
     }
-    :active{
+  }
+
+  .dropdown-item:hover {
+    background-color: $pink;
+  }
+  @include media-breakpoint-up(md) {
+    visibility: hidden;
+  }
+
+  button {
+    background-color: $pink;
+
+    :hover {
+      background-color: $pink;
+    }
+
+    :active {
       background-color: $pink;
     }
   }
 }
-.logo{
-img{
-  z-index: 2;
-  width: 130px;
-  position: absolute;
-  top: 150px;
-  left: 10%;
-  @include media-breakpoint-up(md){
-    left:40%;
-    top: 200px;
-    width: 200px;
+
+.logo {
+  img {
+    z-index: 2;
+    width: 130px;
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    @include media-breakpoint-up(md) {
+      left: 30%;
+      top: 200px;
+      width: 200px;
+    }
   }
-}}
+}
 
 .jumbotron-fluid {
   top: 50%;
@@ -95,120 +112,145 @@ img{
   width: 100%;
   min-height: 100%;
 
+  .header-title {
+    width: 70%;
+    background-color: $pink-light;
+    position: absolute;
+    padding-top: 10px;
+    text-align: center;
+    top: 165px;
+    left: 20%;
+    height: 90px;
 
-.header-title{
-  width: 70%;
-  background-color: $pink-light;
-  position: absolute;
-  padding-top: 10px;
-  padding-left: 100px;
-top: 165px;
-left: 20%;
-height: 90px;
-.header-social > a > img {
-margin-top: -60px;
-margin-right: 5px;
-width: 30px;
+    .header-social > a > img {
+      margin-top: -60px;
+      margin-right: 5px;
+      width: 30px;
+    }
+    @include media-breakpoint-up(sm) {
+      width: 300px;
+      position: absolute;
+      text-align: center;
+      top: 170px;
+      padding-left: 90px;
+      padding-bottom: 10px;
 
+      .header-social > a > img {
+        margin-top: -50px;
+        margin-right: 8px;
+        width: 30px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      width: 400px;
+      height: 140px;
+      position: absolute;
+      left: 38%;
+      top: 230px;
+      text-align: center;
+      padding-bottom: 10px;
+
+      .header-social {
+        text-align: center;
+      }
+
+      .header-social > a > img {
+        margin-top: -20px;
+        margin-right: 8px;
+        width: 45px;
+      }
+      h1{
+        font-size: 45px;
+      }
+    }
+  }
 }
-  @include media-breakpoint-up(sm){
-  width: 300px;
-  position: absolute;
-  right: 10%;
-  top: 170px;
-  padding-left: 90px;
-padding-bottom: 10px;
-.header-social > a > img {
-margin-top: -20px;
-margin-right: 8px;
-width: 30px;
-}}
 
-@include media-breakpoint-up(md){
-width: 300px;
-position: absolute;
-right: 10%;
-top: 230px;
-padding-left: 90px;
-padding-bottom: 10px;
-.header-social > a > img {
-margin-top: -20px;
-margin-right: 8px;
-width: 30px;
-}}
-}}
-
-.dark-grey{
+.dark-grey {
   background-color: $dark-grey;
   color: white;
-  min-height: 20%;
 }
 
-.light-grey{
+.light-grey {
   background-color: $light-grey;
-  min-height: 80%;
 }
 
-.about-me{
+.about-me {
   text-align: center;
-  img{
-    width: 50%;
+
+  img {
+    margin-top: 100px;
+    width: 80%;
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
   }
 }
 
 .card {
   float: left;
   width: 100%;
-  padding: .75rem;
+  padding: 0.75rem;
   margin-bottom: 2rem;
   border: 0;
   background-color: $light-grey;
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 0.75rem;
+    width: 100%;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .card-text {
+    font-size: 85%;
+  }
 }
 
-.card > img {
-  margin-bottom: .75rem;
-  width: 100%;}
-
-.card > img:hover{
-  cursor: pointer;
-}
-
-.card-text {
-  font-size: 85%;
-}
-
-.modal  {
+.modal {
   width: 100%;
   background-color: rgba(255,255,255,0.7);
 
-  .btn{
+  .btn {
     background-color: $pink;
-:hover{
-  cursor: pointer;
-}
+
+    :hover {
+      cursor: pointer;
+    }
   }
-  .close:hover{
+
+  .close:hover {
     cursor: pointer;
   }
 }
 
 .modal-body > img {
-  width: 100%
+  width: 100%;
 }
 
-form{
+form {
+  font-family: 'Catamaran';
   text-align: center;
   padding-top: 30px;
+
   input[type=text] {
     border-radius: 5px;
     width: 350px;
   }
-  input[type=textarea]{
+
+  input[type=textarea] {
     border-radius: 5px;
     width: 350px;
     height: 300px;
   }
-  input[type=submit]{
+
+  input[type=submit] {
     background-color: $pink;
     margin: 20px;
     width: 100px;
@@ -218,11 +260,38 @@ form{
 
 div > a > img {
   width: 100px;
-:last-child{
-  width: 50px;
+
+  :last-child {
+    width: 50px;
+  }
 }
+
+.footer-social {
+  text-align: center;
+
+  img {
+    margin: 10px;
+    width: 80px;
+  }
+
+  :last-child > img {
+    width: 25px;
+    margin-right: 5px;
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
 }
 
 footer {
   background-color: $pink;
+
+  p {
+    text-align: center;
+    font-size: 15px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+  }
 }
