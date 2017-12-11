@@ -5684,11 +5684,13 @@ li a {
 .dark-grey {
   background-color: #2E2E2E;
   color: white;
-  min-height: 20%; }
+  min-height: 20%;
+  max-height: 20%; }
 
 .light-grey {
   background-color: #BCBCBC;
-  min-height: 80%; }
+  min-height: 80%;
+  max-height: 80%; }
 
 .about-me {
   text-align: center; }
