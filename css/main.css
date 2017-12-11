@@ -5561,7 +5561,8 @@ html {
   font-size: 20px; }
   html h1 {
     font-size: 25px;
-    font-family: 'Dosis'; }
+    font-family: 'Dosis';
+    padding: 12px; }
   html h2 {
     font-size: 20px;
     font-family: 'Catamaran'; }
@@ -5637,14 +5638,14 @@ li a {
     width: 70%;
     background-color: rgba(219, 64, 128, 0.7);
     position: absolute;
-    padding-top: 10px;
+    padding-top: -30px;
     padding-left: 70px;
     text-align: center;
     top: 165px;
     left: 20%;
-    height: 90px; }
+    height: 95px; }
     .jumbotron-fluid .header-title .header-social > a > img {
-      margin-top: -60px;
+      margin-top: -70px;
       margin-right: 5px;
       width: 30px; }
     @media (min-width: 576px) {
@@ -5656,7 +5657,7 @@ li a {
         padding-left: 50px;
         padding-bottom: 10px; }
         .jumbotron-fluid .header-title .header-social > a > img {
-          margin-top: -50px;
+          margin-top: -70px;
           margin-right: 8px;
           width: 30px; } }
     @media (min-width: 768px) {
@@ -5672,7 +5673,7 @@ li a {
         .jumbotron-fluid .header-title .header-social {
           text-align: center; }
         .jumbotron-fluid .header-title .header-social > a > img {
-          margin-top: -20px;
+          margin-top: -50px;
           margin-right: 8px;
           width: 45px; }
         .jumbotron-fluid .header-title h1 {
@@ -5684,22 +5685,27 @@ li a {
 .dark-grey {
   background-color: #2E2E2E;
   color: white;
-  min-height: 20%;
-  max-height: 20%; }
+  height: 10vh; }
 
 .light-grey {
   background-color: #BCBCBC;
-  min-height: 80%;
-  max-height: 80%; }
+  min-height: 100%; }
+  @media (min-width: 768px) {
+    .light-grey {
+      height: 90vh; } }
+
+#about-me .light-grey {
+  height: 90vh; }
 
 .about-me {
   text-align: center; }
   .about-me img {
-    margin-top: 100px;
-    width: 80%; }
+    margin-top: 35%;
+    width: 95%; }
     @media (min-width: 768px) {
       .about-me img {
-        width: 50%; } }
+        width: 50%;
+        margin-top: 2%; } }
 
 .card {
   float: left;
@@ -5731,6 +5737,10 @@ li a {
 
 .modal-body > img {
   width: 100%; }
+
+@media (min-width: 768px) {
+  #contact .light-grey {
+    height: 100%; } }
 
 form {
   font-family: 'Catamaran';
