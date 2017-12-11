@@ -7,6 +7,7 @@ body {
   background-color: $pink;
 }
 // Responsive typography sizes using Bootstrap mixins for the media querries
+
 html {
   h1 {
     font-size: 25px;
@@ -162,7 +163,8 @@ li a {
         margin-right: 8px;
         width: 45px;
       }
-      h1{
+
+      h1 {
         font-size: 45px;
       }
     }
@@ -182,21 +184,18 @@ li a {
 .light-grey {
   background-color: $light-grey;
   min-height: 100%;
-
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     height: 90vh;
   }
 }
 
-#about-me{
-
-.light-grey{
-  height: 90vh;
-}
+#about-me {
+  .light-grey {
+    height: 90vh;
+  }
 }
 
 .about-me {
-
   text-align: center;
 
   img {
@@ -216,9 +215,11 @@ li a {
   margin-bottom: 2rem;
   border: 0;
   background-color: $light-grey;
+
   :hover {
     cursor: pointer;
   }
+
   p {
     text-align: center;
     padding-top: 20px;
@@ -227,8 +228,6 @@ li a {
   img {
     margin-bottom: 0.75rem;
     width: 100%;
-
-
   }
 
   .card-text {
@@ -257,10 +256,10 @@ li a {
   width: 100%;
 }
 
-#contact{
-  .light-grey{
-    @include media-breakpoint-up(md){
-      height:100%;
+#contact {
+  .light-grey {
+    @include media-breakpoint-up(md) {
+      height: 100%;
     }
   }
 }
@@ -329,23 +328,24 @@ footer {
 
 #return-to-top {
   margin-left: 100px;
-text-decoration: none;
-color: black;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 
-i {
-  transform: scale(2);
+  i {
+    transform: scale(2);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-}
-:hover {
+  }
+
+  :hover {
     cursor: pointer;
-}
+  }
 }
