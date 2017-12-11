@@ -117,6 +117,7 @@ li a {
     background-color: $pink-light;
     position: absolute;
     padding-top: 10px;
+    padding-left: 70px;
     text-align: center;
     top: 165px;
     left: 20%;
@@ -132,7 +133,7 @@ li a {
       position: absolute;
       text-align: center;
       top: 170px;
-      padding-left: 90px;
+      padding-left: 50px;
       padding-bottom: 10px;
 
       .header-social > a > img {
@@ -149,6 +150,7 @@ li a {
       top: 230px;
       text-align: center;
       padding-bottom: 10px;
+      padding-left: 110px;
 
       .header-social {
         text-align: center;
@@ -166,8 +168,8 @@ li a {
   }
 }
 
-row{
-  min-height: 100%
+.row {
+  min-height: 100%;
 }
 
 .dark-grey {
@@ -178,7 +180,7 @@ row{
 
 .light-grey {
   background-color: $light-grey;
-  min-height: 80%
+  min-height: 80%;
 }
 
 .about-me {
