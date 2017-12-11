@@ -166,13 +166,19 @@ li a {
   }
 }
 
+row{
+  min-height: 100%
+}
+
 .dark-grey {
   background-color: $dark-grey;
   color: white;
+  min-height: 20%;
 }
 
 .light-grey {
   background-color: $light-grey;
+  min-height: 80%
 }
 
 .about-me {

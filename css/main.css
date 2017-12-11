@@ -5676,12 +5676,17 @@ li a {
         .jumbotron-fluid .header-title h1 {
           font-size: 45px; } }
 
+row {
+  min-height: 100%; }
+
 .dark-grey {
   background-color: #2E2E2E;
-  color: white; }
+  color: white;
+  min-height: 20%; }
 
 .light-grey {
-  background-color: #BCBCBC; }
+  background-color: #BCBCBC;
+  min-height: 80%; }
 
 .about-me {
   text-align: center; }
