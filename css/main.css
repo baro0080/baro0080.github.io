@@ -5714,14 +5714,14 @@ li a {
   margin-bottom: 2rem;
   border: 0;
   background-color: #BCBCBC; }
+  .card :hover {
+    cursor: pointer; }
   .card p {
     text-align: center;
     padding-top: 20px; }
   .card img {
     margin-bottom: 0.75rem;
     width: 100%; }
-    .card img :hover {
-      cursor: pointer; }
   .card .card-text {
     font-size: 85%; }
 
