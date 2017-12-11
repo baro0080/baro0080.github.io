@@ -4,6 +4,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Catamaran|Dosis");
 @media print {
   *,
   *::before,
@@ -5467,7 +5468,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase, .header-subtle {
+.text-uppercase {
   text-transform: uppercase !important; }
 
 .text-capitalize {
@@ -5512,10 +5513,10 @@ a.text-success:focus, a.text-success:hover {
 a.text-info:focus, a.text-info:hover {
   color: #117a8b !important; }
 
-.text-warning, .header-subtle {
+.text-warning {
   color: #ffc107 !important; }
 
-a.text-warning:focus, a.header-subtle:focus, a.text-warning:hover, a.header-subtle:hover {
+a.text-warning:focus, a.text-warning:hover {
   color: #d39e00 !important; }
 
 .text-danger {
@@ -5553,24 +5554,217 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 body {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  background-color: #DB4080; }
 
 html {
-  font-size: 14px; }
+  font-size: 20px; }
+  html h1 {
+    font-size: 25px;
+    font-family: 'Dosis'; }
+  html h2 {
+    font-size: 20px;
+    font-family: 'Catamaran'; }
+  html p {
+    font-family: 'Catamaran'; }
+  @media (min-width: 576px) {
+    html {
+      font-size: 20px; } }
+  @media (min-width: 768px) {
+    html {
+      font-size: 20px; } }
+  @media (min-width: 992px) {
+    html {
+      font-size: 20px; } }
 
-@media (min-width: 576px) {
-  html {
-    font-size: 16px; } }
+nav {
+  visibility: hidden; }
+  @media (min-width: 768px) {
+    nav {
+      visibility: visible; } }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 20px; } }
+li a {
+  text-decoration: none;
+  font-family: 'Catamaran';
+  margin: 0 20px;
+  color: white; }
+  li a :hover {
+    text-decoration: none;
+    color: black; }
 
-@media (min-width: 992px) {
-  html {
-    font-size: 28px; } }
+.dropdown {
+  z-index: 5;
+  top: 5px;
+  right: 5px;
+  position: fixed; }
+  .dropdown a {
+    text-decoration: none;
+    color: black; }
+  .dropdown .dropdown-menu {
+    background-color: #DB4080; }
+    .dropdown .dropdown-menu :hover {
+      background-color: #DB4080; }
+  .dropdown .dropdown-item:hover {
+    background-color: #DB4080; }
+  @media (min-width: 768px) {
+    .dropdown {
+      visibility: hidden; } }
+  .dropdown button {
+    background-color: #DB4080; }
+    .dropdown button :hover {
+      background-color: #DB4080; }
+    .dropdown button :active {
+      background-color: #DB4080; }
 
-.header-subtle {
-  font-size: 1.2rem;
-  letter-spacing: .12em;
-  opacity: .6; }
+.logo img {
+  z-index: 2;
+  width: 130px;
+  position: absolute;
+  top: 150px;
+  left: 10%; }
+  @media (min-width: 768px) {
+    .logo img {
+      left: 30%;
+      top: 200px;
+      width: 200px; } }
+
+.jumbotron-fluid {
+  top: 50%;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%; }
+  .jumbotron-fluid .header-title {
+    width: 70%;
+    background-color: rgba(219, 64, 128, 0.7);
+    position: absolute;
+    padding-top: 10px;
+    text-align: center;
+    top: 165px;
+    left: 20%;
+    height: 90px; }
+    .jumbotron-fluid .header-title .header-social > a > img {
+      margin-top: -60px;
+      margin-right: 5px;
+      width: 30px; }
+    @media (min-width: 576px) {
+      .jumbotron-fluid .header-title {
+        width: 300px;
+        position: absolute;
+        text-align: center;
+        top: 170px;
+        padding-left: 90px;
+        padding-bottom: 10px; }
+        .jumbotron-fluid .header-title .header-social > a > img {
+          margin-top: -50px;
+          margin-right: 8px;
+          width: 30px; } }
+    @media (min-width: 768px) {
+      .jumbotron-fluid .header-title {
+        width: 400px;
+        height: 140px;
+        position: absolute;
+        left: 38%;
+        top: 230px;
+        text-align: center;
+        padding-bottom: 10px; }
+        .jumbotron-fluid .header-title .header-social {
+          text-align: center; }
+        .jumbotron-fluid .header-title .header-social > a > img {
+          margin-top: -20px;
+          margin-right: 8px;
+          width: 45px; }
+        .jumbotron-fluid .header-title h1 {
+          font-size: 45px; } }
+
+row {
+  min-height: 100%; }
+
+.dark-grey {
+  background-color: #2E2E2E;
+  color: white;
+  min-height: 20%; }
+
+.light-grey {
+  background-color: #BCBCBC;
+  min-height: 80%; }
+
+.about-me {
+  text-align: center; }
+  .about-me img {
+    margin-top: 100px;
+    width: 80%; }
+    @media (min-width: 768px) {
+      .about-me img {
+        width: 50%; } }
+
+.card {
+  float: left;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  background-color: #BCBCBC; }
+  .card p {
+    text-align: center; }
+  .card img {
+    margin-bottom: 0.75rem;
+    width: 100%; }
+    .card img :hover {
+      cursor: pointer; }
+  .card .card-text {
+    font-size: 85%; }
+
+.modal {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); }
+  .modal .btn {
+    background-color: #DB4080; }
+    .modal .btn :hover {
+      cursor: pointer; }
+  .modal .close:hover {
+    cursor: pointer; }
+
+.modal-body > img {
+  width: 100%; }
+
+form {
+  font-family: 'Catamaran';
+  text-align: center;
+  padding-top: 30px; }
+  form input[type=text] {
+    border-radius: 5px;
+    width: 350px; }
+  form input[type=textarea] {
+    border-radius: 5px;
+    width: 350px;
+    height: 300px; }
+  form input[type=submit] {
+    background-color: #DB4080;
+    margin: 20px;
+    width: 100px;
+    height: 50px; }
+
+div > a > img {
+  width: 100px; }
+  div > a > img :last-child {
+    width: 50px; }
+
+.footer-social {
+  text-align: center; }
+  .footer-social img {
+    margin: 10px;
+    width: 80px; }
+  .footer-social :last-child > img {
+    width: 25px;
+    margin-right: 5px; }
+  .footer-social h2 {
+    margin-top: 40px; }
+
+footer {
+  background-color: #DB4080; }
+  footer p {
+    text-align: center;
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      footer p {
+        font-size: 20px; } }
